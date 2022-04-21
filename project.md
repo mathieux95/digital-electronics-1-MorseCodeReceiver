@@ -1,4 +1,4 @@
-# YOUR_PROJECT_TITLE
+# Morse Code Receiver
 
 ### Team members
 
@@ -7,7 +7,7 @@
 * Adam Ondrejka (ID: 216915) (responsible for xxx)
 * David Carboch (ID: 221654) (responsible for xxx)
 
-### Morse Code Receiver 
+### Table of contents 
 
 * [Project objectives](#objectives)
 * [Hardware description](#hardware)
