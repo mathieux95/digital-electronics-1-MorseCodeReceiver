@@ -32,7 +32,7 @@ Source code, testbenches and simulations are all developed in Vivado.
 <a name="hardware"></a>
 
 ## Hardware description
-(https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/nexys-a7-description.png) 
+ ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/nexys-a7-description.png) 
 
 Write your text here.
 
