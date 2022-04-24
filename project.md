@@ -1,14 +1,11 @@
 # Morse Code Receiver
 
-## Authors
+## Team members
 
-- [@mathieux95](https://github.com/mathieux95)
-
-
-* Matej Gradoš (ID:230551) (responsible for xxx)
-* Patrik Horčička (ID: 230558) (responsible for xxx)
-* Adam Ondrejka (ID: 216915) (responsible for xxx)
-* David Carboch (ID: 221654) (responsible for xxx)
+* Matej Gradoš (ID:230551) (responsible for xxx) [@mathieux95](https://github.com/mathieux95)
+* Patrik Horčička (ID: 230558) (responsible for xxx) [@patrikhor](https://github.com/patrikhor)
+* Adam Ondrejka (ID: 216915) (responsible for xxx) [@xondre](https://github.com/xondre)
+* David Carboch (ID: 221654) (responsible for xxx) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
 
 ### Table of contents 
 
