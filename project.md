@@ -1,6 +1,9 @@
 # Morse Code Receiver
 
-### Team members
+## Authors
+
+- [@mathieux95](https://github.com/mathieux95)
+
 
 * Matej Gradoš (ID:230551) (responsible for xxx)
 * Patrik Horčička (ID: 230558) (responsible for xxx)
