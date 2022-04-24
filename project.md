@@ -20,7 +20,14 @@
 
 ## Project objectives
 
-Write your text here.
+The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse code Receiver. 
+For completetion of the project we used these components: 
+* NEXYS A7 50T board to conotrol all of the other parts
+* 7-segment displays
+*
+
+The singal enters the processing unit via _____ connector, which receives the data input and uses comparable logic created mainly by IF / ELSEIF statements. The length of each symbol is 19bits, which after translation show up on the 7-segment displays. Each letter of the alphabet will be translated separately with final output lighting up on the a-g segments.  
+Source code, testbenches and simulations are all developed in Vivado.
 
 <a name="hardware"></a>
 
