@@ -1,4 +1,4 @@
-# Morse Code Receiver
+# Digital Electronics - Semester Project - Morse Code Receiver
 
 ## Team members
 
