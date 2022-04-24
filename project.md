@@ -1,5 +1,9 @@
 # Digital Electronics - Semester Project - Morse Code Receiver
 
+
+![Logo](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/logo-en%201.png)
+
+
 ## Team members
 
 * Matej Gradoš (ID:230551) (responsible for xxx) [@mathieux95](https://github.com/mathieux95)
