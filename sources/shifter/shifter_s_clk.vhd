@@ -64,7 +64,9 @@ begin
                 elsif (en1_i = '0' and en2_i = '1' and (char_i = '1' or word_i = '1')) then -- potom potreba predelat, pokud pudeme resit vice znaku zaroven zobrazenych na 7seg displeji
                     data_o <= data_int;
                     rdy_o <= '1';
-                    data_int <= "00000001";                            
+                    data_int <= "00000001";   
+                else
+                    rdy_o <= '0';
                 end if;
             
             end if;    
