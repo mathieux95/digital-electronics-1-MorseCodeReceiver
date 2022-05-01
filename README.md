@@ -1,6 +1,6 @@
 # Semester Project - Morse Code Receiver
 Digital Electronics 1 (Summer Semester 2021/22)
-<br /> 
+
 
 ![Logo](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/logo-en%201.png)
 
