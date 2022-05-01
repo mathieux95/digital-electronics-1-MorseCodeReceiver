@@ -1,4 +1,4 @@
-## Morse Code Receiver
+# Morse Code Receiver
 Semester Project - Digital Electronics 1 (Summer Semester 2021/22)
 
 
