@@ -54,25 +54,31 @@ begin
     shift_register:process (clk)
         begin
             if rising_edge (clk) then
-                if (rst = '1') then
+                if (rst = '1') then             -- synchronous reset
                     s_data_int <= "00000001";
                     data_o <= "10000000";
                     rdy_o <= '0';
                     s_status <= '0';
                 else
-                    if (en1_i = '1' and en2_i = '0') then
-                        s_status <= '1';
-                        if dot_i = '1' then
+                    if (en1_i = '1' and en2_i = '0') then                       -- if dot or dash is detected 
+                        s_status <= '1';                                        -- s_status is set to '1'
+                                                                                -- that allows the next output sequence to happen
+                        if dot_i = '1' then                                     -- register is filled according to the detected sequence of morse code
                             s_data_int <= s_data_int(6 downto 0) & '0';
                         elsif dash_i = '1' then
                             s_data_int <= s_data_int(6 downto 0) & '1';                
                         end if;
-                    elsif (en1_i = '0' and en2_i = '1' and s_status = '1') then 
+                    elsif (en1_i = '0' and en2_i = '1' and s_status = '1') then -- if s_status has been set and a space is detected in the morse code
+                                                                                -- register content is sent to the output and ready signal is activated
+                                                                                -- so that the memory which receives the output can load it
                             data_o <= s_data_int;
                             rdy_o <= '1';
-                            s_status <= '0';   
+                            s_status <= '0';                                    -- s_status is immediately set to low, which makes sure, that
+                                                                                -- ready signal is only a brief impulse so that the memory
+                                                                                -- which receives the output doesn't load it multiple times in a row
+                                                                                -- but only once
                     elsif(s_status = '0') then
-                        s_data_int <= "00000001";
+                        s_data_int <= "00000001";                               --ready signal is set to low and the register is reseted as quickly as possible
                         rdy_o <= '0';                          
                     end if;
                 end if;
