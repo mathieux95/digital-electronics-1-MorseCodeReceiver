@@ -34,9 +34,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity edge_detect is
     Port ( clk : in STD_LOGIC;
            reset : in STD_LOGIC;
-           smp_i : in STD_LOGIC; --tlacitko
-           switch_i : in std_logic;
-           smp2_i : in std_logic; --arduino
+           smp_i : in STD_LOGIC; -- button input
+           switch_i : in std_logic; -- switching between smp_i and smp2_i
+           smp2_i : in std_logic; -- arduino input
            rise_o : out STD_LOGIC;
            fall_o : out STD_LOGIC
           );
@@ -49,7 +49,7 @@ architecture Behavioral of edge_detect is
 
 
 begin
-     p_edge_detect : process(clk)
+     p_edge_detect : process(clk)   -- process only for changing the source of input signal using the switch on a board
     begin
         if rising_edge(clk) then
             if (switch_i = '1')then
@@ -77,8 +77,8 @@ begin
             q => s_smp_o(0)
         );
         
-   rise_o <= s_smp_o(1) and not(s_smp_o(0));    -- rise_o is 1 when sequence '0','1' is detected, otherwise 0
-   fall_o <= not(s_smp_o(1)) and s_smp_o(0);   -- fall_o is 1 when sequence '1','0' is detected, otherwise 0
+   rise_o <= s_smp_o(1) and not(s_smp_o(0));    -- rise_o is '1' only when sequence '0','1' is detected in the input signal, otherwise 0
+   fall_o <= not(s_smp_o(1)) and s_smp_o(0);   -- fall_o is '1' only when sequence '1','0' is detected in the input signal, otherwise 0
    
    
    --__________________________________________
