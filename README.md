@@ -22,11 +22,12 @@
 
 ## Project objectives
 
-The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse code Receiver. 
+The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse Code Receiver. The Morse Code Receiver has the ability to receive input from source (in our case - buttons on the Arty-A7-50T board) and translate it. After translation, you get a sigle letter output on the 7-segement display. 
+
 For completetion of the project we used these components: 
 * NEXYS A7 50T board to conotrol all of the other parts
 * 7-segment displays
-*
+* 2/5 push buttons on the Nexys A7 50T board (located in the right hand corner) 
 
 The singal enters the processing unit via _____ connector, which receives the data input and uses comparable logic created mainly by IF / ELSEIF statements. The length of each symbol is 19bits, which after translation show up on the 7-segment displays. Each letter of the alphabet will be translated separately with final output lighting up on the a-g segments.  
 Source code, testbenches and simulations are all developed in Vivado.
@@ -44,7 +45,9 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/nexysA7-50T.png) 
 
-
+ 
+-  `BTNU` Pushbutton located on the top of the group is used for input of the signal (hold = dash, quick push = dot) 
+-  `BTNC` Pushbutton located in the center of the group is used for reset of the memory
 
 <a name="modules"></a>
 
