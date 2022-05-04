@@ -36,7 +36,14 @@ Source code, testbenches and simulations are all developed in Vivado.
 ## Hardware description
  ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/nexysA7-50T.png) 
 
-Write your text here.
+### Nexys A7-50T
+The Nexys A7 board is a complete, ready-to-use digital circuit development platform based on the latest Artix-7TM
+Field Programmable Gate Array (FPGA) from Xilinx®. With its large, high-capacity FPGA, generous external
+memories, and collection of USB, Ethernet, and other ports, the Nexys A7 can host designs ranging from
+introductory combinational circuits to powerful embedded processors. Several built-in peripherals, including an
+accelerometer, temperature sensor, MEMs digital microphone, a speaker amplifier, and several I/O devices allow
+the Nexys A7 to be used for a wide range of designs without needing any other components.
+
 
 <a name="modules"></a>
 
