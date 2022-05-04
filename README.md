@@ -63,7 +63,7 @@ Every letter of the English alphabet and number is assigned an 8bit binary value
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Shifting_operation.png)
 <br />
 <br />
-*Algorithm of creating 8bit words to binary representation* 
+**Algorithm of creating 8bit words to binary representation**
 - Every symbol in initialized by marker - 1
 - Dot is represented by zero - 0
 - Dash is represented by one - 1  
