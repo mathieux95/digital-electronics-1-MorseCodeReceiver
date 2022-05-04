@@ -69,11 +69,15 @@ Pushbutton group used for input | 7segment display used to display translated ou
 `Time_Decoder2` - after receiving rising_edge as an input,`Time_Decoder2` picks up the duration of the interval from `Stopwatch 2`. Picked up duration is then compared internally and decided upon, whether the output is char or word
 
 `Morse_To_8bit_Shifter` - receives and translates the received binary input into an 8bit sequence. 
-When dot (.) is received the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. 
 
-When dash (_) is received the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.
+When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. 
+
+When dash (_) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.
+
+After receiving char or word sends out **ready** to output and displays collected data.
 
 
+`8bit_To_7seg` - waiting for **ready** impulse from `Morse_To_8bit_Shifter`. After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display.
 
 <a name="modules"></a>
 
