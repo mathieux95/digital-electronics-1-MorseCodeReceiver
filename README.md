@@ -79,6 +79,23 @@ After receiving char or word sends out **ready** to output and displays collecte
 
 `8bit_To_7seg` - waiting for **ready** impulse from `Morse_To_8bit_Shifter`. After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display.
 
+
+ | **Block** | **Description** |
+      | :-: | :-: | 
+      | `CLK100MHZ` | receives binary input - zeros (0) and ones (1) - from push button `BTNU` and differentiates between `rising_edge` or `falling_edge`. If detector receives either rising_edge or falling_edge binary 1 is sent to output. |
+      | `SW`        | in  | `std_logic` | Counter direction |
+      | `LED`       | out | `std_logic_vector(3 downto 0)` | Counter value LED indicators |
+      | `CA`        | out | `std_logic` | Cathod A |
+      | `CB`        | out | `std_logic` | Cathod B |
+      | `CC`        | out | `std_logic` | Cathod C |
+      | `CD`        | out | `std_logic` | Cathod D |
+      | `CE`        | out | `std_logic` | Cathod E |
+      | `CF`        | out | `std_logic` | Cathod F |
+      | `CG`        | out | `std_logic` | Cathod G |
+      | `AN`        | out | `std_logic_vector(7 downto 0)` | Common anode signals to individual displays |
+      | `BTNC`      | in  | `std_logic` | Synchronous reset |
+
+
 <a name="modules"></a>
 
 ## VHDL modules description and simulations
