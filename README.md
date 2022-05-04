@@ -91,7 +91,6 @@ Pushbutton group used for input | 7segment display used to display translated ou
 | `8bit_To_7seg` | Waiting for **ready** impulse from `Morse_To_8bit_Shifter`. <br /> After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display |
 <br />
 <br />
-<br />
 
 ## Video presentation
 <a name="video"></a> https://youtu.be/Kkrv4JOsWZg 
