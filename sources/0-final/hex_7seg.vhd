@@ -164,7 +164,7 @@ begin
                 seg_o <= "0010011";     -- Z
 
             when others =>
-                seg_o <= "1111111";     --  segment doesn't light up otherwise
+                seg_o <= "1111111";     --  segments don't light up with undefined input 
 
         end case;
     end process p_7seg_decoder;
