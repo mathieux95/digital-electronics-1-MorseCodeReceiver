@@ -61,20 +61,19 @@ begin
                 dash_o <= '0';  
                 en_o <= '0';            
           
-            elsif(fall_i = '1') then
-               --checking if its dot   0,07 - 0,2 s
-                if(seconds_l_i <= "0001" and hundredths_h_i >= "0001") then
-                    dot_o <= '1';
-                    en_o <= '1';
+            elsif(fall_i = '1') then                                            -- if falling edge has been detected
+                                                                                ---- check the length of a pulse which just ended 
+                if(seconds_l_i <= "0001" and hundredths_h_i >= "0001") then     ---- if it's a dot (defined as 0,07 - 0,2 s)     
+                    dot_o <= '1';                                               ------ send signal to the dot output along with enable signal,
+                    en_o <= '1';                                                ------ which signal that the new output is present
                 
-                --checking if its dash  0,2 - 0,4 s
-                elsif(seconds_l_i > "0001") then
-                    dash_o <= '1';
+                elsif(seconds_l_i > "0001") then                                ---- if it's a dash  (defined as 0,2 - 0,4 s)
+                    dash_o <= '1';                                              ------ send signal to the dash output along with enable signal
                     en_o <= '1';    
                 end if;     
-            --set outputs back to 0      
-            else
-                en_o <= '0';
+                                                  
+            else                                                                ---- if no falling edge gets detected
+                en_o <= '0';                                                    ------ keep all outputs at '0'
                 dot_o <= '0';
                 dash_o <= '0';
                                                        
