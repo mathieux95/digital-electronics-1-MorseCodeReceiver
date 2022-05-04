@@ -49,6 +49,8 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 -  `BTNU` Pushbutton located on the top of the group is used for input of the signal (hold = dash, quick push = dot) 
 -  `BTNC` Pushbutton located in the center of the group is used for reset of the memory
 
+### 7-segment display 
+- `1st 7seg display` 7-segment display used for a single letter output from the received input
 
 Pushbutton group used for input | 7segment display used to display translated output 
 :-------------------------:|:-------------------------:
