@@ -29,7 +29,7 @@ The main objective of the project within the subject Digital Electronics 1 (Summ
 The singal enters the processing unit via pushbutton which is simulating the real-life scenario. Same as with the telegraphs back in the old days, where user only had the option to push or hold down on the telegraph key which resulted in dot or dash being transmitted. Our translating unit then receives the data input and uses comparable logic created mainly by `CASE - WHEN` statements. <br /> <br />
 The length of each symbol is translated into an uniform lenght of 8bits. Translated sequence of 8bits is then rightaway displayed on the 7-segment display - lighting up corresponding a-g segments. The device is able to translate every letter of the Modern Englsih alphabet and numbers from 0 to 9. 
 
-:computer: Source code, testbenches and simulations were all developed in integrated development environment **Vivado** and can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/tree/main/sources/0-final). 
+:computer: Source code, testbenches and simulations were all developed in integrated development environment **Vivado** and can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/tree/main/sources/morse_code_receiver). 
 
 <a name="hardware"></a>
 
