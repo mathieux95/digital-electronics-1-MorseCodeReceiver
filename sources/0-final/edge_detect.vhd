@@ -77,8 +77,8 @@ begin
             q => s_smp_o(0)
         );
         
-   rise_o <= s_smp_o(1) and not(s_smp_o(0));    -- is 1 when sequence '0','1' is detected, otherwise 0
-   fall_o <= not(s_smp_o(1)) and s_smp_o(0);   -- is 1 when sequence '1','0' is detected, otherwise 0
+   rise_o <= s_smp_o(1) and not(s_smp_o(0));    -- rise_o is 1 when sequence '0','1' is detected, otherwise 0
+   fall_o <= not(s_smp_o(1)) and s_smp_o(0);   -- fall_o is 1 when sequence '1','0' is detected, otherwise 0
    
    
    --__________________________________________
