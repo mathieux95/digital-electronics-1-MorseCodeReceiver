@@ -9,11 +9,6 @@
 * Adam Ondrejka (ID: 216915) (Edge_detector, comments in code, components) [@xondre](https://github.com/xondre)
 * David Carboch (ID: 221654) (Morse_to_8bit_shifter, video presentation of the overall project) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
 
-Maťo - all github, visual design
-Ezop - morse_to_8bit_shifter, video
-Xondre - edge_detector, kod komenty
-Patas - stopwatch, timeDecoder
-
 ### Table of contents 
 
 * [Project objectives](#objectives)
