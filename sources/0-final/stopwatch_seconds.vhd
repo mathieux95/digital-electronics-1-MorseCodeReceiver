@@ -22,13 +22,13 @@ entity stopwatch_seconds is
         reset          : in  std_logic;
         start_i        : in  std_logic;     -- Start counting
         pause_i        : in  std_logic;     -- Pause counting
-        -- Tens of seconds
+        -- seconds
         seconds_h_o    : out std_logic_vector(3 - 1 downto 0);
-        -- Seconds
+        -- tenths of a second
         seconds_l_o    : out std_logic_vector(4 - 1 downto 0);
-        -- Tenths of seconds
+        -- hundredths of a second
         hundredths_h_o : out std_logic_vector(4 - 1 downto 0);
-        -- Hundredths of seconds
+        -- milliseconds
         hundredths_l_o : out std_logic_vector(4 - 1 downto 0)
     );
 end entity stopwatch_seconds;
@@ -43,21 +43,21 @@ architecture Behavioral of stopwatch_seconds is
     -- Internal start button flag
     signal s_start : std_logic;
     -- Local counters
-    signal s_cnt3  : unsigned(3 - 1 downto 0);  -- Tens of seconds
-    signal s_cnt2  : unsigned(4 - 1 downto 0);  -- Seconds
-    signal s_cnt1  : unsigned(4 - 1 downto 0);  -- Tenths of seconds
-    signal s_cnt0  : unsigned(4 - 1 downto 0);  -- Hundredths of seconds
+    signal s_cnt3  : unsigned(3 - 1 downto 0);  -- seconds
+    signal s_cnt2  : unsigned(4 - 1 downto 0);  -- tenths of a second
+    signal s_cnt1  : unsigned(4 - 1 downto 0);  -- hundredths of a second
+    signal s_cnt0  : unsigned(4 - 1 downto 0);  -- milliseconds
 
 begin
     --------------------------------------------------------------------
     -- Instance (copy) of clock_enable entity generates an enable pulse
-    -- every 10 ms (100 Hz).
+    -- every 1 ms (1000 Hz).
 
     -- JUST FOR SHORTER/FASTER SIMULATION
   --  s_en <= '1';
     clk_en0 : entity work.clock_enable
         generic map(
-            g_MAX =>  100000      --100000 = 10 ms / (1/100 MHz) = g_MAX --- simulation =1
+            g_MAX =>  100000      --100000 = 1 ms / (1/100 MHz) = g_MAX --- simulation =1
         )
         port map(
             ce_o => s_en,
@@ -70,7 +70,7 @@ begin
     -- p_stopwatch_cnt:
     -- Sequential process with synchronous reset and clock enable,
     -- which implements four decimal counters. The lowest of the 
-    -- counters is incremented every 10 ms, and each higher-order 
+    -- counters is incremented every 1 ms, and each higher-order 
     -- counter is incremented if all lower-order counters are equal 
     -- to the maximum value.
     --------------------------------------------------------------------
@@ -91,7 +91,7 @@ begin
 
             -- Counting only if start was pressed and pause is inactive
             elsif (s_en = '1' and s_start = '1' and pause_i = '0') then
-                s_cnt0 <= s_cnt0 + 1;       -- Increment every 10 ms
+                s_cnt0 <= s_cnt0 + 1;       -- Increment every 1 ms
                 if(s_cnt0 = "1001") then
                     s_cnt1 <= s_cnt1 + 1;
                     s_cnt0 <= s_cnt0 - 9;
