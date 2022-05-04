@@ -56,7 +56,7 @@ Pushbutton group used for input | 7segment display used to display translated ou
 <a name="modules"></a>
 
 ## Software description
-Every letter of the English alphabet and number is assigned an 8bit binary value created by a simple algorithm based on International Morse Code rule book.
+Every letter of the English alphabet and number is assigned an 8bit binary value created by a simple algorithm based on [International Morse Code rule book](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/morse_code.png).
 <br />
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Shifting_operation.png)
 <br />
