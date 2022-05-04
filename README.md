@@ -4,10 +4,10 @@
 
 ## Team members
 
-* Matej Gradoš (ID:230551) (responsible for xxx) [@mathieux95](https://github.com/mathieux95)
-* Patrik Horčička (ID: 230558) (responsible for xxx) [@patrikhor](https://github.com/patrikhor)
-* Adam Ondrejka (ID: 216915) (responsible for xxx) [@xondre](https://github.com/xondre)
-* David Carboch (ID: 221654) (responsible for xxx) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
+* Matej Gradoš (ID:230551) [@mathieux95](https://github.com/mathieux95)
+* Patrik Horčička (ID: 230558) [@patrikhor](https://github.com/patrikhor)
+* Adam Ondrejka (ID: 216915) [@xondre](https://github.com/xondre)
+* David Carboch (ID: 221654) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
 
 ### Table of contents 
 
