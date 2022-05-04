@@ -18,7 +18,7 @@
 * [TOP module description and simulations](#top)
 * [Video](#video)
 * [References](#references)
-* [Final VHDL code](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/tree/main/sources/0-final) 
+* [Final VHDL code](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/tree/main/sources/morse_code_receiver) 
 
 <a name="objectives"></a>
 
