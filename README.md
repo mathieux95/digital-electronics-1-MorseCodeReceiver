@@ -25,7 +25,7 @@
 
 The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse Code Receiver. The Morse Code Receiver has the ability to receive input from source (in our case - buttons on the Arty-A7-50T board) and translate it. After translation, user receives a sigle letter/number output on the 7-segement display. 
 
-The singal enters the processing unit via pushbutton which is simulating the real-life scenario. Same as with the telegraphs back in the old days, where user only had the option to push or hold down on the telegraph key which resulted in dot or dash being transmitted. Our translating unit then receives the data input and uses comparable logic created mainly by `CASE - WHEN` statements. <br />
+The singal enters the processing unit via pushbutton which is simulating the real-life scenario. Same as with the telegraphs back in the old days, where user only had the option to push or hold down on the telegraph key which resulted in dot or dash being transmitted. Our translating unit then receives the data input and uses comparable logic created mainly by `CASE - WHEN` statements. <br /> <br />
 The length of each symbol is translated into an uniform lenght of 8bits. Translated sequence of 8bits is then rightaway displayed on the 7-segment display - lighting up corresponding a-g segments. The device is able to translate every letter of the Modern Englsih alphabet and numbers from 0 to 9. 
 
 Source code, testbenches and simulations are all developed in integrated development environment Vivado.
