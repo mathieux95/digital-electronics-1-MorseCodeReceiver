@@ -81,7 +81,7 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 
 | Block | Description |
-|---|---|
+|:---|:---|
 | `Edge detector` | receiving binary input - [0] and [1] - from push button `BTNU` Differentiates between `rising_edge` or `falling_edge`. If detector receives either rising_edge or falling_edge binary 1 is sent to output. |
 | `Stopwatch 1` | measures time interval between rise and fall impulse received from `Edge detector` . <br /> This means `Stopwatch 1` is measuring how long we've had 1 as an input |
 | `Stopwatch 2` | measures time interval between rise and fall impulse received from `Edge detector`. <br /> This means `Stopwatch 2` is measuring how long we've had 0 as an input. |
