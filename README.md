@@ -4,10 +4,10 @@
 
 ## Team members
 
-* Matej Gradoš (ID:230551) (Github repository completetion, alphabet-to-morseCode-to-8bit translation) [@mathieux95](https://github.com/mathieux95)
-* Patrik Horčička (ID: 230558) ( Stopwatches, TimeDecoders) [@patrikhor](https://github.com/patrikhor)
-* Adam Ondrejka (ID: 216915) (Edge_detector, comments in code, components) [@xondre](https://github.com/xondre)
-* David Carboch (ID: 221654) (Morse_to_8bit_shifter, video presentation of the overall project) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
+* **Matej Gradoš** (ID:230551) (Github repository completetion, alphabet-to-morseCode-to-8bit translation) [@mathieux95](https://github.com/mathieux95)
+* **Patrik Horčička** (ID: 230558) ( Stopwatches, TimeDecoders) [@patrikhor](https://github.com/patrikhor)
+* **Adam Ondrejka** (ID: 216915) (Edge_detector, comments in code, components) [@xondre](https://github.com/xondre)
+* **David Carboch** (ID: 221654) (Morse_to_8bit_shifter, video presentation of the overall project) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
 
 ### Table of contents 
 
