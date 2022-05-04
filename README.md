@@ -90,7 +90,6 @@ Pushbutton group used for input | 7segment display used to display translated ou
 | `Morse_To_8bit_Shifter` | Receives and translates the received binary input into an 8bit sequence.When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. <br /> When dash (-) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.After receiving char or word sends out **ready** to output and displays collected data |
 | `8bit_To_7seg` | Waiting for **ready** impulse from `Morse_To_8bit_Shifter`. <br /> After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display |
 <br />
-<br />
 
 ## Video presentation
 <a name="video"></a> https://youtu.be/Kkrv4JOsWZg 
