@@ -73,10 +73,9 @@ Every letter of the English alphabet and number is assigned an 8bit binary value
 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bit_logic.png)
 
-Letters and numbers assigned 8bit value can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/support_files/MorseCodeDecoder_8bit.xlsx)
+Letters and numbers assigned 8bit value can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/support_files/MorseCodeDecoder_8bit.xlsx) .
 
-
-![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
+To make the output fully functional and working properly assigning segments on a 7segment display is essential. To display values on the 7segment display we used [this](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif) manual.
 
 
 ## VHDL modules description and simulations
