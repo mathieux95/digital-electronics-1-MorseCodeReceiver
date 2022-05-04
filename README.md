@@ -49,7 +49,7 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 -  `BTNC` Pushbutton located in the center of the group used for reset of the memory
 
 ### 7-segment display 
-- `7seg display` 7-segment display used for a single letter output from the received input
+- `7seg display` 7-segment display used for a single character output based on the received input
 
 Pushbutton group used for input | 7segment display used to display translated output 
 :-------------------------:|:-------------------------:
