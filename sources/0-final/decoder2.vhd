@@ -72,7 +72,7 @@ begin
                 end if;
             elsif(seconds_h_i = "001") then                                 -- if no next rising edge comes and the pause length hits 1 s 
                 word_o <= '1';                                              ---- send signal to the word output along with enable signal
-                en_o <= '1';                                                ---- and the reset signal for the stopwatch2
+                en_o <= '1';                                                ---- and the reset signal for the stopwatch_seconds2
                 rst_o <= '1';
 
             else                                                            -- set outputs back to 0
