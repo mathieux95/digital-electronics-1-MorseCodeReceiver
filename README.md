@@ -4,10 +4,15 @@
 
 ## Team members
 
-* Matej Gradoš (ID:230551) (responsible for xxx) [@mathieux95](https://github.com/mathieux95)
-* Patrik Horčička (ID: 230558) (responsible for xxx) [@patrikhor](https://github.com/patrikhor)
-* Adam Ondrejka (ID: 216915) (responsible for xxx) [@xondre](https://github.com/xondre)
-* David Carboch (ID: 221654) (responsible for xxx) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
+* Matej Gradoš (ID:230551) (Github repository completetion, alphabet-to-morseCode-to-8bit translation) [@mathieux95](https://github.com/mathieux95)
+* Patrik Horčička (ID: 230558) ( Stopwatches, TimeDecoders) [@patrikhor](https://github.com/patrikhor)
+* Adam Ondrejka (ID: 216915) (Edge_detector, comments in code, components) [@xondre](https://github.com/xondre)
+* David Carboch (ID: 221654) (Morse_to_8bit_shifter, video presentation of the overall project) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
+
+Maťo - all github, visual design
+Ezop - morse_to_8bit_shifter, video
+Xondre - edge_detector, kod komenty
+Patas - stopwatch, timeDecoder
 
 ### Table of contents 
 
@@ -75,10 +80,10 @@ Every letter of the English alphabet and number is assigned an 8bit binary value
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bit_logic.png)
 <br />
 <br />
-Letters and numbers assigned 8bit value can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/support_files/MorseCodeDecoder_8bit.xlsx) .
+**Letters and numbers assigned 8bit value** can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/support_files/MorseCodeDecoder_8bit.xlsx) .
 <br />
 <br />
-To make the output fully functional and working properly assigning segments on a 7segment display is essential. To display values on the 7segment display we used [this](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif) manual.
+To make the output fully functional and working properly assigning segments on a 7segment display is essential. To display corresponding values on the 7segment display we used [this](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif) manual.
 <br />
 <br />
 
