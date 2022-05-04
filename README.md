@@ -78,7 +78,7 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-0.png) 
 ### Measuring time interval in 1
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-1.png) 
-### Decoding time interval - decision time to assing dot(.) or dash(-)
+### Decoding time interval - decision time to assign dot(.) or dash(-)
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/03-zCasu-dot-dash.png) 
 ### Decoding time interval - decision time to assing char or word
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/04-zCasu-char-word.png) 
