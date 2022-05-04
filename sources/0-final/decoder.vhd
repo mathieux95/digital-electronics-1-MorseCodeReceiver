@@ -65,7 +65,7 @@ begin
                                                                                 ---- check the length of a pulse which just ended 
                 if(seconds_l_i <= "0001" and hundredths_h_i >= "0001") then     ---- if it's a dot (defined as 0,07 - 0,2 s)     
                     dot_o <= '1';                                               ------ send signal to the dot output along with enable signal,
-                    en_o <= '1';                                                ------ which signal that the new output is present
+                    en_o <= '1';                                                ------ which signals that the new output is present
                 
                 elsif(seconds_l_i > "0001") then                                ---- if it's a dash  (defined as 0,2 - 0,4 s)
                     dash_o <= '1';                                              ------ send signal to the dash output along with enable signal
