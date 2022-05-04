@@ -53,6 +53,10 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ![PushButtons](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/PushButtons.jpg)|![7segUsed](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/7segUsed.jpg)
 
 
+### Scheme 
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Scheme.png) 
+
+
 
 <a name="modules"></a>
 
