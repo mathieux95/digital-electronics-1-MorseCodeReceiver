@@ -55,7 +55,7 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ![PushButtons](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/PushButtons.jpg)|![7segUsed](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/7segUsed.jpg)
 
 
-<a name="modules"></a>
+<a name="detection"></a>
 
 ## Detection algorithm description
 Every letter of the English alphabet and number is assigned an 8bit binary value created by a simple algorithm based on [International Morse Code rule book](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/morse_code.png)
