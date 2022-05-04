@@ -49,12 +49,12 @@ begin
     --------------------------------------------------------
     p_d_ff_rst : process(clk)
     begin
-        if rising_edge(clk) then  -- Synchronous process
+        if rising_edge(clk) then  -- synchronous process
 
-            if (rst = '1') then
+            if (rst = '1') then   -- synchronous reset
                 q     <= '0';
                 q_bar <= '1';
-            else
+            else                    -- with each rising edge q gets value of d and q_bar gets negation of d
                 q     <= d;
                 q_bar <= not d;
             end if; 
