@@ -71,7 +71,6 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/05-UlozeniDatDoPametivypisDanehoZnakuNaSegment.png) 
 
 <br />
-<br />
 
 <a name="top"></a>
 
