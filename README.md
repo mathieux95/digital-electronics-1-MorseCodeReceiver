@@ -86,15 +86,15 @@ To make the output fully functional and working properly assigning segments on a
 
 #### Detection of `rising_ege` and `falling_edge`  
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/01-detekce_rice_fall-edge.png) 
-### Measuring time interval in `0`
+#### Measuring time interval in `0`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-0.png) 
-### Measuring time interval in `1`
+#### Measuring time interval in `1`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-1.png) 
-### Decoding time interval - decision time to assign `dot(.)` or `dash(-)`
+#### Decoding time interval - decision time to assign `dot(.)` or `dash(-)`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/03-zCasu-dot-dash.png) 
-### Decoding time interval - decision time to assing `char` or `word`
+#### Decoding time interval - decision time to assing `char` or `word`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/04-zCasu-char-word.png) 
-### Saving data into memory - displaying output on `7-segment display` 
+#### Saving data into memory - displaying output on `7-segment display` 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/05-UlozeniDatDoPametivypisDanehoZnakuNaSegment.png) 
 <br />
 
