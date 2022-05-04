@@ -4,10 +4,10 @@
 
 ## Team members
 
-* Matej Gradoš (ID:230551) [@mathieux95](https://github.com/mathieux95)
-* Patrik Horčička (ID: 230558) [@patrikhor](https://github.com/patrikhor)
-* Adam Ondrejka (ID: 216915) [@xondre](https://github.com/xondre)
-* David Carboch (ID: 221654) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
+* Matej Gradoš (ID:230551) (responsible for xxx) [@mathieux95](https://github.com/mathieux95)
+* Patrik Horčička (ID: 230558) (responsible for xxx) [@patrikhor](https://github.com/patrikhor)
+* Adam Ondrejka (ID: 216915) (responsible for xxx) [@xondre](https://github.com/xondre)
+* David Carboch (ID: 221654) (responsible for xxx) [@EzopVonJanoviceCity](https://github.com/EzopVonJanoviceCity)
 
 ### Table of contents 
 
@@ -65,14 +65,25 @@ Pushbutton group used for input | 7segment display used to display translated ou
 | `Stopwatch 2`                       	| measures time interval between rise and fall impulse received from `Edge detector`. Basically this means `Stopwatch 2` is measuring how long we've had 0 as an input.                                                                                                                                                                                                        	|
 | `Time_Decoder1`                     	| after receiving fall_edge as an input,`Time_Decoder1` picks up the duration of the interval from `Stopwatch 1`. Picked up duration is then compared internally and decided upon, whether the output is dash (-) or dot (.)                                                                                                                                                   	|
 | `Time_Decoder2`                     	| after receiving rising_edge as an input,`Time_Decoder2` picks up the duration of the interval from `Stopwatch 2`. Picked up duration is then compared internally and decided upon, whether the output is char or word                                                                                                                                                        	|
-| `Morse_To_8bit_Shifter` 	| receives and translates the received binary input into an 8bit sequence.<br><br>When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. <br><br>When dash (_) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.<br><br>After receiving char or word sends out **ready** to output and displays collected data. 	|
+| `Morse_To_8bit_Shifter` 	| receives and translates the received binary input into an 8bit sequence.<br><br>When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. <br><br>When dash (-) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.<br><br>After receiving char or word sends out **ready** to output and displays collected data. 	|
 | `8bit_To_7seg`                      	| waiting for **ready** impulse from `Morse_To_8bit_Shifter`. After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display.                                                                                                                                                                                                     	|
 
 <a name="modules"></a>
 
 ## VHDL modules description and simulations
 
-Write your text here.
+### Detection of `rising_ege` and `falling_edge`  
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/01-detekce_rice_fall-edge.png) 
+### Measuring time interval in 0
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-0.png) 
+### Measuring time interval in 1
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-1.png) 
+### Decoding time interval - decision time to assing dot(.) or dash(-)
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/03-zCasu-dot-dash.png) 
+### Decoding time interval - decision time to assing char or word
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/04-zCasu-char-word.png) 
+
+
 
 <a name="top"></a>
 
