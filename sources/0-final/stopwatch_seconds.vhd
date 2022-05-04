@@ -43,7 +43,7 @@ architecture Behavioral of stopwatch_seconds is
     -- Internal start button flag
     signal s_start : std_logic;
     -- Local counters
-	signal s_cnt3  : unsigned(3 - 1 downto 0);  -- Tens of seconds
+    signal s_cnt3  : unsigned(3 - 1 downto 0);  -- Tens of seconds
     signal s_cnt2  : unsigned(4 - 1 downto 0);  -- Seconds
     signal s_cnt1  : unsigned(4 - 1 downto 0);  -- Tenths of seconds
     signal s_cnt0  : unsigned(4 - 1 downto 0);  -- Hundredths of seconds
