@@ -54,9 +54,12 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 
 ### Scheme 
-:-------------------------:|
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Scheme.png) 
 
+###Scheme description
+`Edge detector`- receives binary input - zeros (0) and ones (1) - from push button `BTNU` and differentiates between `rising_edge` or `falling_edge`. If detector receives either `rising_edge` or `falling_edge` binary 1 is sent to `output`.
+
+`Stopwatch 1`
 
 
 <a name="modules"></a>
