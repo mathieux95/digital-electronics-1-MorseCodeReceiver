@@ -49,27 +49,8 @@ entity decoder2 is
 end decoder2;
 
 architecture Behavioral of decoder2 is
-    
-        -- Internal clock enable
-    signal s_en    : std_logic;
-    
+     
 begin
-    --------------------------------------------------------------------
-    -- Instance (copy) of clock_enable entity generates an enable pulse
-    -- every 10 ms (100 Hz).
-
-    -- JUST FOR SHORTER/FASTER SIMULATION
-   -- s_en <= '1';
---    clk_en0 : entity work.clock_enable
---        generic map(
---            g_MAX =>  100000      -- 10 ms / (1/100 MHz) = g_MAX
---        )
---        port map(
---            ce_o => s_en,
---            clk => clk,
---            reset => reset
-      
---        );
         
      p_decoder_cnt : process(clk)
     begin
@@ -79,11 +60,11 @@ begin
                 char_o <= '0';
                 word_o <= '0';  
                 en_o <= '0';                 
-            elsif(rise_i = '1')then
-                --checking if its end of char -- 3 - 6s    0,2-0,6
-                if(seconds_l_i >= "0001" and seconds_l_i <= "0011") then
-                    char_o <= '1';
-                    en_o <= '1';
+            elsif(rise_i = '1')then                                         -- if rising edge has been detected
+                --checking if its end of char -- 3 - 6s    0,2-0,6          ---- check the length of a pause which just ended
+                if(seconds_l_i >= "0001" and seconds_l_i <= "0011") then    ---- if it's an end of a character -- 3 - 6s    0,2-0,6
+                    char_o <= '1';                                          ------ send signal to the dot output along with enable signal,
+                    en_o <= '1';                                            ------ which signals that the new output is present
                 --checking if its end of word 
                 elsif(seconds_l_i  > "0011") then
                     word_o <= '1';
