@@ -22,7 +22,7 @@
 
 ## Project objectives
 
-The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse Code Receiver. The Morse Code Receiver has the ability to receive input from source (in our case - buttons on the Arty-A7-50T board) and translate it. After translation, you get a sigle letter output on the 7-segement display. 
+The main objective of the project within the subject Digital Electronics 1 (Summer Semester 2022) was to create a Morse Code Receiver. The Morse Code Receiver has the ability to receive input from source (in our case - buttons on the Arty-A7-50T board) and translate it. After translation, user receives a sigle letter/number output on the 7-segement display. 
 
 
 For completetion of the project we used these components: 
