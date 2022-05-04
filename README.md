@@ -55,6 +55,14 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 <a name="modules"></a>
 
+## Software description
+
+
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bit_logic.png)
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bitChars.png)
+![your figuere](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
+
+
 ## VHDL modules description and simulations
 
 ### Detection of `rising_ege` and `falling_edge`  
