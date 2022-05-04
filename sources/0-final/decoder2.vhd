@@ -61,21 +61,21 @@ begin
                 word_o <= '0';  
                 en_o <= '0';                 
             elsif(rise_i = '1')then                                         -- if rising edge has been detected
-                --checking if its end of char -- 3 - 6s    0,2-0,6          ---- check the length of a pause which just ended
-                if(seconds_l_i >= "0001" and seconds_l_i <= "0011") then    ---- if it's an end of a character -- 3 - 6s    0,2-0,6
-                    char_o <= '1';                                          ------ send signal to the dot output along with enable signal,
+                                                                            ---- check the length of a pause which just ended
+                if(seconds_l_i >= "0001" and seconds_l_i <= "0011") then    ---- if it's an end of a character (defined as 0,1-0,3 s)
+                    char_o <= '1';                                          ------ send signal to the char output along with enable signal,
                     en_o <= '1';                                            ------ which signals that the new output is present
-                --checking if its end of word 
-                elsif(seconds_l_i  > "0011") then
-                    word_o <= '1';
+                 
+                elsif(seconds_l_i  > "0011") then                           ---- if it's an end of a word (defined as longer than 0,3 s)
+                    word_o <= '1';                                          ------ send signal to the word output along with enable signal
                     en_o <= '1';                 
                 end if;
-            elsif(seconds_h_i = "001") then 
-                word_o <= '1';
-                en_o <= '1'; 
+            elsif(seconds_h_i = "001") then                                 -- if no next rising edge comes and the pause length hits 1 s 
+                word_o <= '1';                                              ---- send signal to the word output along with enable signal
+                en_o <= '1';                                                ---- and the reset signal for the stopwatch2
                 rst_o <= '1';
-            --set outputs back to 0      
-            else
+
+            else                                                            -- set outputs back to 0
                 rst_o <= '0';
                 char_o <= '0';
                 word_o <= '0';
