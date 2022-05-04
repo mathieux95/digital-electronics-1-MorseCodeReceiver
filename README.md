@@ -81,7 +81,7 @@ After receiving char or word sends out **ready** to output and displays collecte
 
 
  | **Block** | **Description** |
-      | :-: | :-: | 
+      | :-: | :-- | 
       | `CLK100MHZ` | receives binary input - zeros (0) and ones (1) - from push button `BTNU` and differentiates between `rising_edge` or `falling_edge`. If detector receives either rising_edge or falling_edge binary 1 is sent to output. |
       | `SW`        | in  | `std_logic` | Counter direction |
       | `LED`       | out | `std_logic_vector(3 downto 0)` | Counter value LED indicators |
