@@ -82,11 +82,9 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 | Block | Description |
 |:---|:---|
-| `Edge detect` | - Receives binary input - [0] and [1] - from push button `BTNU` Differentiates between `rising_edge` or `falling_edge` 
-                  - If detector receives either rising_edge or falling_edge binary 1 is sent to output. |
-| `Stopwatch1` | - Measures time interval between rise and fall impulse received from `Edge detector` 
-                 - This means `Stopwatch 1` is measuring how long we've had 1 as an input |
-| `Stopwatch2` | Measures time interval between rise and fall impulse received from `Edge detector`. <br /> This means `Stopwatch 2` is measuring how long we've had 0 as an input. |
+| `Edge detect` | Receives binary input - [0] and [1] - from push button `BTNU` Differentiates between `rising_edge` or `falling_edge`. When detector receives either rising_edge or falling_edge binary 1 is sent to output. |
+| `Stopwatch1` | Measures time interval between rise and fall impulse received from `Edge detector`. This means `Stopwatch 1` is measuring how long we've had 1 as an input |
+| `Stopwatch2` | Measures time interval between rise and fall impulse received from `Edge detector`. This means `Stopwatch 2` is measuring how long we've had 0 as an input |
 | `Time_Decoder1` | After fall_edge received on input `Time_Decoder1` picks up the duration of the interval from `Stopwatch 1`. <br /> Picked up duration is then compared internally and decided upon, whether the output is dash (-) or dot (.) |
 | `Time_Decoder2` | After receiving rising_edge as an input `Time_Decoder2` picks up the duration of the interval from `Stopwatch 2`. <br /> Picked up duration is then compared internally and decided upon, whether the output is char or word |
 | `Morse_To_8bit_Shifter` | Receives and translates the received binary input into an 8bit sequence.When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. When dash (-) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.After receiving char or word sends out **ready** to output and displays collected data |
