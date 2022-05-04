@@ -84,7 +84,7 @@ To make the output fully functional and working properly assigning segments on a
 
 ## VHDL modules description and simulations
 
-### Detection of `rising_ege` and `falling_edge`  
+#### Detection of `rising_ege` and `falling_edge`  
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/01-detekce_rice_fall-edge.png) 
 ### Measuring time interval in `0`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/02-cas-samplu-v-0.png) 
@@ -94,7 +94,7 @@ To make the output fully functional and working properly assigning segments on a
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/03-zCasu-dot-dash.png) 
 ### Decoding time interval - decision time to assing `char` or `word`
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/04-zCasu-char-word.png) 
-### Saving data into memory, writing out output on 7-segment display 
+### Saving data into memory - displaying output on `7-segment display` 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/05-UlozeniDatDoPametivypisDanehoZnakuNaSegment.png) 
 <br />
 
