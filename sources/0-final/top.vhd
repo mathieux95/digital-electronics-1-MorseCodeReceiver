@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 ------------------------------------------------------------
--- Entity declaration for testbench
+-- declaration of inputs and outputs
 ------------------------------------------------------------
 entity top is
   port(  CLK100MHZ : in STD_LOGIC;
@@ -22,7 +22,7 @@ entity top is
 end entity top;
 
 ------------------------------------------------------------
--- Architecture body for testbench
+-- Architecture body
 ------------------------------------------------------------
 architecture behavior of top is
     --Local signals
@@ -50,12 +50,12 @@ architecture behavior of top is
     signal s_dig_o : std_logic_vector(8 - 1 downto 0);
     
 begin
-    -- Connecting testbench signals with d_ff_rst entity
-    -- (Unit Under Test)
-    
-    
-        
-    uut_edge_detect : entity work.edge_detect
+  
+    -- creating instances of all needed functional modules
+    -- and connecting them together using local signals
+    -- or connecting them to their respective inputs and outputs
+  
+    edge_detect : entity work.edge_detect
         port map(
             clk     => CLK100MHZ,
             reset     => BTNC,
@@ -66,7 +66,7 @@ begin
             switch_i => SW             
         );
         
-     uut_stopwatch_seconds : entity work.stopwatch_seconds
+     stopwatch_seconds : entity work.stopwatch_seconds
         port map(
             clk            => CLK100MHZ,
             reset          => BTNC,
@@ -78,7 +78,7 @@ begin
             hundredths_l_o => s_hundredths_l
         );
         
-      uut_stopwatch_seconds2 : entity work.stopwatch_seconds2
+      stopwatch_seconds2 : entity work.stopwatch_seconds2
         port map(
             clk            => CLK100MHZ,
             reset          => BTNC,
@@ -90,7 +90,7 @@ begin
             hundredths_l_o => s_hundredths_l2,
             dec_reset => s_dec_reset
         ); 
-       uut_decoder : entity work.decoder
+       decoder : entity work.decoder
         port map(
             clk            => CLK100MHZ,
             reset          => BTNC,
@@ -104,7 +104,7 @@ begin
             dash_o => s_dash,
             en_o   => s_en
         ); 
-      uut_decoder2 : entity work.decoder2
+      decoder2 : entity work.decoder2
         port map(
             clk            => CLK100MHZ,
             reset          => BTNC,
@@ -119,7 +119,7 @@ begin
             en_o   => s_en2,
             rst_o => s_dec_reset
         ); 
-     uut_morse_to_8bit_shifter : entity work.morse_to_8bit_shifter
+     morse_to_8bit_shifter : entity work.morse_to_8bit_shifter
         port map(
             clk            => CLK100MHZ,
             rst       => BTNC,
@@ -133,7 +133,7 @@ begin
             data_o  => s_data_to_memory
         ); 
 
-     uut_hex_7seg : entity work.hex_7seg
+     hex_7seg : entity work.hex_7seg
         port map(
 
             hex_i => s_data_to_memory,
