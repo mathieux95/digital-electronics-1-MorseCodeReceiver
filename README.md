@@ -120,6 +120,12 @@ To make the output fully functional and working properly assigning segments on a
 ## Video presentation
 <a name="video"></a> https://youtu.be/Kkrv4JOsWZg 
 
+<a name="references"></a>
+
+## References
+https://vhdlguide.readthedocs.io/en/latest/index.html
+https://stackoverflow.com/questions/18291515/variable-number-of-in-ports-in-an-entity
+https://www.researchgate.net/publication/305379385_Morse_code_decoder_design_in_VHDL_using_FPGA_Spartan_3E_development_kit
 
 ## License
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
