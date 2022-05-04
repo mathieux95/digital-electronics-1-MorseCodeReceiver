@@ -63,11 +63,11 @@ begin
           
             elsif(fall_i = '1') then                                            -- if falling edge has been detected
                                                                                 ---- check the length of a pulse which just ended 
-                if(seconds_l_i <= "0001" and hundredths_h_i >= "0001") then     ---- if it's a dot (defined as 0,07 - 0,2 s)     
+                if(seconds_l_i <= "0001" and hundredths_h_i >= "0001") then     ---- if it's a dot (defined as 0,1 - 1 s)     
                     dot_o <= '1';                                               ------ send signal to the dot output along with enable signal,
                     en_o <= '1';                                                ------ which signals that the new output is present
                 
-                elsif(seconds_l_i > "0001") then                                ---- if it's a dash  (defined as 0,2 - 0,4 s)
+                elsif(seconds_l_i > "0001") then                                ---- if it's a dash  (defined as longer than 1 s)
                     dash_o <= '1';                                              ------ send signal to the dash output along with enable signal
                     en_o <= '1';    
                 end if;     
