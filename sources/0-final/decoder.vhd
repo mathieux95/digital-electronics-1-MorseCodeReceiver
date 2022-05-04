@@ -49,28 +49,8 @@ end decoder;
 
 architecture Behavioral of decoder is
     
-        -- Internal clock enable
-    signal s_en    : std_logic;
  
-
-    
 begin
-    --------------------------------------------------------------------
-    -- Instance (copy) of clock_enable entity generates an enable pulse
-    -- every 10 ms (100 Hz).
-
-    -- JUST FOR SHORTER/FASTER SIMULATION
-   -- s_en <= '1';
---    clk_en0 : entity work.clock_enable
---        generic map(
---            g_MAX =>  100000      -- 10 ms / (1/100 MHz) = g_MAX
---        )
---        port map(
---            ce_o => s_en,
---            clk => clk,
---            reset => reset
-      
---        );
         
      p_decoder_cnt : process(clk)
     begin
