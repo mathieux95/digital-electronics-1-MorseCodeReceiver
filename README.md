@@ -69,7 +69,6 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/04-zCasu-char-word.png) 
 ### Saving data into memory, writing out output on 7-segment display 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/05-UlozeniDatDoPametivypisDanehoZnakuNaSegment.png) 
-
 <br />
 
 <a name="top"></a>
