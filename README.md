@@ -71,7 +71,7 @@ Every letter of the English alphabet and number is assigned an 8bit binary value
 <br />
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bitChars3.png)
 <br />
-![your figuere](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
 
 
 ## VHDL modules description and simulations
