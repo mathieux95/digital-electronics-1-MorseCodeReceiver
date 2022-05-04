@@ -164,7 +164,7 @@ begin
                 seg_o <= "0010011";     -- Z
 
             when others =>
-                seg_o <= "1111111";     --  jinak nesviti
+                seg_o <= "1111111";     --  segment doesn't light up otherwise
 
         end case;
     end process p_7seg_decoder;
