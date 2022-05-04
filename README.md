@@ -70,7 +70,8 @@ Pushbutton group used for input | 7segment display used to display translated ou
 ### Saving data into memory, writing out output on 7-segment display 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/05-UlozeniDatDoPametivypisDanehoZnakuNaSegment.png) 
 
-
+<br />
+<br />
 
 <a name="top"></a>
 
@@ -78,8 +79,8 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 ### Scheme 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Scheme.png) 
-
-
+<br />
+<br />
 | Block | Description |
 |:---|:---|
 | `Edge detect` | Receives binary input - [0] and [1] - from push button `BTNU` Differentiates between `rising_edge` or `falling_edge`. <br /> When detector receives either rising_edge or falling_edge binary 1 is sent to output. |
@@ -89,9 +90,9 @@ Pushbutton group used for input | 7segment display used to display translated ou
 | `Time_Decoder2` | After receiving rising_edge as an input `Time_Decoder2` picks up the duration of the interval from `Stopwatch 2`. <br /> Picked up duration is then compared internally and decided upon, whether the output is char or word |
 | `Morse_To_8bit_Shifter` | Receives and translates the received binary input into an 8bit sequence.When dot (.) is received by the `Morse_To_8bit_Shifter` **0 (zero)** is added into memory. <br /> When dash (-) is received by the `Morse_To_8bit_Shifter` **1 (one)** is added into memory.After receiving char or word sends out **ready** to output and displays collected data |
 | `8bit_To_7seg` | Waiting for **ready** impulse from `Morse_To_8bit_Shifter`. <br /> After receiving mentioned impulse, reads out saved data and displays letter/number on the 7-segment display |
-
-
-
+<br />
+<br />
+<br />
 
 <a name="video"></a> https://youtu.be/Kkrv4JOsWZg 
 
