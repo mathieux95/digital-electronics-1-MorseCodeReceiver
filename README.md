@@ -13,6 +13,7 @@
 
 * [Project objectives](#objectives)
 * [Hardware description](#hardware)
+* [Detection algorithm description](#detection)
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
 * [Video](#video)
@@ -46,7 +47,7 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 -  `BTNC` Pushbutton located in the center of the group is used for reset of the memory
 
 ### 7-segment display 
-- `1st 7seg display` 7-segment display used for a single letter output from the received input
+- `7seg display` 7-segment display used for a single letter output from the received input
 
 Pushbutton group used for input | 7segment display used to display translated output 
 :-------------------------:|:-------------------------:
@@ -55,8 +56,9 @@ Pushbutton group used for input | 7segment display used to display translated ou
 
 <a name="modules"></a>
 
-## Software description
-Every letter of the English alphabet and number is assigned an 8bit binary value created by a simple algorithm based on [International Morse Code rule book](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/morse_code.png).
+## Detection algorithm description
+Every letter of the English alphabet and number is assigned an 8bit binary value created by a simple algorithm based on [International Morse Code rule book](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/morse_code.png)
+<br />
 <br />
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Shifting_operation.png)
 <br />
@@ -71,8 +73,7 @@ Every letter of the English alphabet and number is assigned an 8bit binary value
 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bit_logic.png)
 
-
-![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bitChars3.png)
+Letters and numbers assigned 8bit value can be found [here](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/support_files/MorseCodeDecoder_8bit.xlsx)
 
 
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
