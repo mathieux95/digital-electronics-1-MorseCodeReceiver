@@ -50,7 +50,7 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 -  `BTNC` Pushbutton located in the center of the group is used for reset of the memory
 
 
-Pushbuttons used |7segment display used to display translated output 
+Pushbutton group used for input | 7segment display used to display translated output 
 :-------------------------:|:-------------------------:
 ![PushButtons](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/PushButtons.jpg)|![7segUsed](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/7segUsed.jpg)
 
