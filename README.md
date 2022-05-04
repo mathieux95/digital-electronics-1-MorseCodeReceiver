@@ -48,7 +48,13 @@ the Nexys A7 to be used for a wide range of designs without needing any other co
 ### Pushbuttons
 -  `BTNU` Pushbutton located on the top of the group is used for input of the signal (hold = dash, quick push = dot) 
 -  `BTNC` Pushbutton located in the center of the group is used for reset of the memory
-- 
+
+
+Pushbuttons used |7segment display used to display translated output 
+:-------------------------:|:-------------------------:
+![PushButtons](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/PushButtons.jpg)|![7segUsed](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/7segUsed.jpg)
+
+
 
 <a name="modules"></a>
 
