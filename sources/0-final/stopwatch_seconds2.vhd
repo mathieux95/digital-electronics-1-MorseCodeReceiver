@@ -79,7 +79,7 @@ begin
     begin
         if rising_edge(clk) then
 
-            if (reset = '1' or dec_reset ='1') then           -- Synchronous reset
+            if (reset = '1' or dec_reset ='1') then           -- Synchronous reset, stopwatch can be resetted also using special reset from the decoder2
                 s_cnt3 <= (others => '0');  -- Clear all bits
                 s_cnt2 <= (others => '0');
                 s_cnt1 <= (others => '0');
@@ -93,19 +93,19 @@ begin
             -- Counting only if start was pressed and pause is inactive
             elsif (s_en = '1' and s_start = '1' and pause_i = '0') then
                 s_cnt0 <= s_cnt0 + 1;       -- Increment every 1 ms
-                if(s_cnt0 = "1001") then
+                if(s_cnt0 = "1001") then    -- after 10 ms, 1 hundredth of a second is added and milliseconds go back to zero
                     s_cnt1 <= s_cnt1 + 1;
                     s_cnt0 <= s_cnt0 - 9;
                 end if;
-                if(s_cnt1 = "1001" and s_cnt0 = "1001") then
+                if(s_cnt1 = "1001" and s_cnt0 = "1001") then    -- after 10 hundredths , 1 tenth of a second is added and hundredths go back to zero
                     s_cnt2 <= s_cnt2 + 1;
                     s_cnt1 <= s_cnt1 - 9;
                 end if; 
-                if(s_cnt2 = "1001" and s_cnt1 = "1001") then 
+                if(s_cnt2 = "1001" and s_cnt1 = "1001") then    -- after 10 tenths , 1 second is added and tenths go back to zero 
                     s_cnt3 <= s_cnt3 + 1;
                     s_cnt2 <= s_cnt2 - 9;
                 end if; 
-            elsif(pause_i = '1')then
+            elsif(pause_i = '1')then        -- upon stopping the stopwatch, everything is resetted
                 s_start <= '0';
                 s_cnt0 <= "0000";
                 s_cnt1 <= "0000"; 
