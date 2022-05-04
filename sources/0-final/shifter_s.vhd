@@ -67,7 +67,7 @@ begin
                     elsif dash_i = '1' then
                         data_int <= data_int(6 downto 0) & '1';                
                     end if;
-                elsif (en1_i = '0' and en2_i = '1' and (char_i = '1' or word_i = '1')) then -- potom potreba predelat, pokud pudeme resit vice znaku zaroven zobrazenych na 7seg displeji 
+                elsif (en1_i = '0' and en2_i = '1' and (char_i = '1' or word_i = '1')) then  
                     data_o <= data_int;
                     rdy_o <= '1';
                     
