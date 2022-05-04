@@ -56,8 +56,8 @@ Pushbutton group used for input | 7segment display used to display translated ou
 <a name="modules"></a>
 
 ## Software description
-
-
+Every letter of the English alphabet and number is assigned an 8bit value which can be found 
+![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/Shifting_operation.png)
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bit_logic.png)
 ![your figure](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/8bitChars.png)
 ![your figuere](https://github.com/mathieux95/digital-electronics-1-MorseCodeReceiver/blob/main/images/siekoo-alphabet.gif)
